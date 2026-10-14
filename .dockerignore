@@ -1,0 +1,20 @@
+.git
+.ddev
+.env-app.local
+.env-app.*.local
+Dockerfile
+docker-compose.yml
+
+# Rebuilt inside the image; keeping host copies out avoids shipping a stale
+# or partial asset build into the container.
+node_modules
+vendor
+public/bundles
+public/build
+public/layout-build
+
+var/cache
+var/logs
+var/sessions
+var/data
+public/media
